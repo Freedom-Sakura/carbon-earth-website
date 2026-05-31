@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>环境影响 - 气候变化的真实影响</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo">
+                <span class="logo-icon">🌍</span>
+                <span class="logo-text">碳排放保护</span>
+            </div>
+            <button class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="emission.html">碳排放行为</a></li>
+                <li><a href="impact.html" class="active">环境影响</a></li>
+                <li><a href="action.html">低碳行动</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 主容器 -->
+    <main>
+        <!-- 页面头部 -->
+        <section class="page-header">
+            <div class="page-header-content">
+                <h1>环境影响</h1>
+                <p>碳排放对地球生态的深远影响</p>
+            </div>
+        </section>
+
+        <!-- 温度趋势图 -->
+        <section class="chart-section">
+            <div class="container">
+                <h2 class="section-title">全球平均温度变化趋势</h2>
+                <p class="section-subtitle">过去170年来全球气温上升了1.2°C，升温速度在加快</p>
+                <div class="chart-container">
+                    <canvas id="impactChart" width="800" height="300"></canvas>
+                </div>
+            </div>
+        </section>
+
+        <!-- 时间线 -->
+        <section class="timeline-section">
+            <div class="container">
+                <h2 class="section-title">气候变化时间线</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker">
+                            <span class="timeline-year">1850</span>
+                        </div>
+                        <div class="timeline-content">
+                            <h3>工业革命后</h3>
+                            <p>全球平均气温为基准温度，CO₂浓度约为290 ppm。工业化导致温室气体排放开始增加。</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker">
+                            <span class="timeline-year">1950</span>
+                        </div>
+                        <div class="timeline-content">
+                            <h3>快速增长阶段</h3>
+                            <p>全球经济高速发展，CO₂浓度上升至310 ppm，平均气温比工业前升高0.5°C。</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker">
+                            <span class="timeline-year">1990</span>
+                        </div>
+                        <div class="timeline-content">
+                            <h3>危机警告</h3>
+                            <p>IPCC成立，发出气候变化预警。CO₂浓度达354 ppm，气温升高0.8°C，极端天气事件增加。</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker">
+                            <span class="timeline-year">2015</span>
+                        </div>
+                        <div class="timeline-content">
+                            <h3>巴黎协议</h3>
+                            <p>全球196个国家签署《巴黎气候协议》，承诺将气温升幅控制在1.5-2°C以内。</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker">
+                            <span class="timeline-year">2024</span>
+                        </div>
+                        <div class="timeline-content">
+                            <h3>临界时刻</h3>
+                            <p>CO₂浓度超过417 ppm，全球气温升高1.2°C。冰川加速消融，极端天气更加频繁。</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker">
+                            <span class="timeline-year">2050</span>
+                        </div>
+                        <div class="timeline-content">
+                            <h3>未来展望</h3>
+                            <p>如不采取行动，气温可能升高2.7-3.2°C，导致灾难性后果。若实现碳中和，可将升温控制在1.5°C。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 具体影响 -->
+        <section class="impact-details">
+            <div class="container">
+                <h2 class="section-title">气候变化的具体影响</h2>
+                <div class="impact-grid">
+                    <div class="impact-card impact-card-critical">
+                        <div class="impact-header">🌡️ 极端高温</div>
+                        <div class="impact-content">
+                            <p><strong>当前现象：</strong></p>
+                            <ul>
+                                <li>热浪强度增加，频率提升</li>
+                                <li>全球创新高温纪录</li>
+                                <li>中东频现50°C+高温</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="impact-card impact-card-critical">
+                        <div class="impact-header">❄️ 冰川消融</div>
+                        <div class="impact-content">
+                            <p><strong>当前现象：</strong></p>
+                            <ul>
+                                <li>北极冰面每年减少13%</li>
+                                <li>格陵兰冰盖加速融化</li>
+                                <li>阿尔卑斯冰川面积减半</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="impact-card impact-card-warning">
+                        <div class="impact-header">🌊 海平面上升</div>
+                        <div class="impact-content">
+                            <p><strong>当前现象：</strong></p>
+                            <ul>
+                                <li>近100年海平面上升20cm</li>
+                                <li>升速每年加快1.4毫米</li>
+                                <li>沿海地区面临威胁</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="impact-card impact-card-warning">
+                        <div class="impact-header">🌪️ 极端天气</div>
+                        <div class="impact-content">
+                            <p><strong>当前现象：</strong></p>
+                            <ul>
+                                <li>飓风强度和频率增加</li>
+                                <li>洪水干旱灾害频发</li>
+                                <li>龙卷风强度增强</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 行动号召 -->
+        <section class="cta-section">
+            <div class="cta-content">
+                <h2>我们还有希望</h2>
+                <p>虽然挑战巨大，但采取积极行动仍能改变未来。了解如何通过个人行动做出改变。</p>
+                <a href="action.html" class="btn btn-large">查看我们能做什么</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2026 碳排放保护地球 | 为绿色未来而努力</p>
+            <div class="footer-links">
+                <a href="#about">关于我们</a>
+                <a href="#contact">联系我们</a>
+                <a href="#privacy">隐私政策</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 脚本 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+    <script src="js/impact-chart.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

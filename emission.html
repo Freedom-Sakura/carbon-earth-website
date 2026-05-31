@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>碳排放行为 - 了解碳排放来源</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo">
+                <span class="logo-icon">🌍</span>
+                <span class="logo-text">碳排放保护</span>
+            </div>
+            <button class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="emission.html" class="active">碳排放行为</a></li>
+                <li><a href="impact.html">环境影响</a></li>
+                <li><a href="action.html">低碳行动</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 主容器 -->
+    <main>
+        <!-- 页面头部 -->
+        <section class="page-header">
+            <div class="page-header-content">
+                <h1>碳排放行为</h1>
+                <p>了解日常生活中主要的碳排放来源</p>
+            </div>
+        </section>
+
+        <!-- 排放来源饼图 -->
+        <section class="chart-section">
+            <div class="container">
+                <h2 class="section-title">全球碳排放来源分布</h2>
+                <div class="chart-container">
+                    <canvas id="emissionChart" width="400" height="400"></canvas>
+                    <div class="chart-legend">
+                        <div class="legend-item">
+                            <span class="legend-color" style="background-color: #ff6b6b;"></span>
+                            <span>能源电力 (25%)</span>
+                        </div>
+                        <div class="legend-item">
+                            <span class="legend-color" style="background-color: #4ecdc4;"></span>
+                            <span>工业制造 (21%)</span>
+                        </div>
+                        <div class="legend-item">
+                            <span class="legend-color" style="background-color: #f7b731;"></span>
+                            <span>农业畜牧 (18%)</span>
+                        </div>
+                        <div class="legend-item">
+                            <span class="legend-color" style="background-color: #a29bfe;"></span>
+                            <span>交通运输 (14%)</span>
+                        </div>
+                        <div class="legend-item">
+                            <span class="legend-color" style="background-color: #6c5ce7;"></span>
+                            <span>建筑采暖 (12%)</span>
+                        </div>
+                        <div class="legend-item">
+                            <span class="legend-color" style="background-color: #00b894;"></span>
+                            <span>其他行业 (10%)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 排放行为详解 -->
+        <section class="emission-details">
+            <div class="container">
+                <h2 class="section-title">常见碳排放行为详解</h2>
+                <div class="emission-grid">
+                    <div class="emission-card">
+                        <div class="emission-icon">🚗</div>
+                        <h3>交通运输</h3>
+                        <p><strong>碳排放量：</strong> 汽车平均每公里排放120克CO₂</p>
+                        <p><strong>主要来源：</strong> 燃油汽车、飞机、轮船、火车等交通工具</p>
+                        <p><strong>影响：</strong> 交通运输占全球碳排放的14%，是重要排放源</p>
+                    </div>
+
+                    <div class="emission-card">
+                        <div class="emission-icon">🏭</div>
+                        <h3>工业生产</h3>
+                        <p><strong>碳排放量：</strong> 钢铁生产每吨排放1.8吨CO₂</p>
+                        <p><strong>主要来源：</strong> 制造业、采矿、化工、建材等</p>
+                        <p><strong>影响：</strong> 工业占碳排放总量的21%，是最大污染源</p>
+                    </div>
+
+                    <div class="emission-card">
+                        <div class="emission-icon">🌾</div>
+                        <h3>农业畜牧</h3>
+                        <p><strong>碳排放量：</strong> 牛肉生产每公斤排放27公斤CO₂</p>
+                        <p><strong>主要来源：</strong> 动物消化系统甲烷排放、肥料使用</p>
+                        <p><strong>影响：</strong> 占全球排放的18%，主要以甲烷形式</p>
+                    </div>
+
+                    <div class="emission-card">
+                        <div class="emission-icon">⚡</div>
+                        <h3>能源电力</h3>
+                        <p><strong>碳排放量：</strong> 燃煤电厂平均排放820克CO₂/度电</p>
+                        <p><strong>主要来源：</strong> 火力发电、供暖、生活用电</p>
+                        <p><strong>影响：</strong> 占碳排放总量的25%，是最大单一源</p>
+                    </div>
+
+                    <div class="emission-card">
+                        <div class="emission-icon">🏢</div>
+                        <h3>建筑采暖</h3>
+                        <p><strong>碳排放量：</strong> 建筑取暖每平米年排放15-30千克CO₂</p>
+                        <p><strong>主要来源：</strong> 供暖、空调、建筑建造和维护</p>
+                        <p><strong>影响：</strong> 占碳排放的12%，冬季尤为突出</p>
+                    </div>
+
+                    <div class="emission-card">
+                        <div class="emission-icon">🍽️</div>
+                        <h3>食物消费</h3>
+                        <p><strong>碳排放量：</strong> 肉类饮食年排放约2.5吨CO₂/人</p>
+                        <p><strong>主要来源：</strong> 食物生产、运输、包装、储存</p>
+                        <p><strong>影响：</strong> 改变饮食习惯可显著降低个人排放</p>
+                    </div>
+
+                    <div class="emission-card">
+                        <div class="emission-icon">✈️</div>
+                        <h3>航空旅行</h3>
+                        <p><strong>碳排放量：</strong> 长途飞行每人排放5-14吨CO₂/年</p>
+                        <p><strong>主要来源：</strong> 飞机燃油燃烧、高空排放放大效应</p>
+                        <p><strong>影响：</strong> 虽占比小但人均排放最大的活动</p>
+                    </div>
+
+                    <div class="emission-card">
+                        <div class="emission-icon">🛍️</div>
+                        <h3>消费生产</h3>
+                        <p><strong>碳排放量：</strong> 新衣服每件排放7-10公斤CO₂</p>
+                        <p><strong>主要来源：</strong> 快时尚、电子产品、包装材料</p>
+                        <p><strong>影响：</strong> 可持续消费能显著减少排放</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 行动号召 -->
+        <section class="cta-section">
+            <div class="cta-content">
+                <h2>了解了碳排放来源</h2>
+                <p>现在是时候采取行动了！查看我们的低碳行动指南和碳足迹计算器。</p>
+                <a href="action.html" class="btn btn-large">开始减排行动</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2026 碳排放保护地球 | 为绿色未来而努力</p>
+            <div class="footer-links">
+                <a href="#about">关于我们</a>
+                <a href="#contact">联系我们</a>
+                <a href="#privacy">隐私政策</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 脚本 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+    <script src="js/emission-chart.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

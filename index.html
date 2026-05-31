@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>碳排放保护地球 - 绿色未来从你开始</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo">
+                <span class="logo-icon">🌍</span>
+                <span class="logo-text">碳排放保护</span>
+            </div>
+            <button class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="active">首页</a></li>
+                <li><a href="emission.html">碳排放行为</a></li>
+                <li><a href="impact.html">环境影响</a></li>
+                <li><a href="action.html">低碳行动</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 主容器 -->
+    <main>
+        <!-- 3D地球展示区 -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="title-highlight">保护地球</span><br>
+                    从减少碳排放开始
+                </h1>
+                <p class="hero-subtitle">了解碳排放对环境的影响，学习如何采取低碳行动</p>
+                <div class="hero-buttons">
+                    <a href="action.html" class="btn btn-primary">开始行动</a>
+                    <a href="emission.html" class="btn btn-secondary">了解更多</a>
+                </div>
+            </div>
+            <div class="hero-canvas" id="canvas-container"></div>
+        </section>
+
+        <!-- 关键数据卡片 -->
+        <section class="stats-section">
+            <div class="stats-container">
+                <div class="stat-card">
+                    <div class="stat-icon">📈</div>
+                    <div class="stat-number" data-target="417">0</div>
+                    <div class="stat-label">ppm 大气CO₂浓度</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">🌡️</div>
+                    <div class="stat-number" data-target="1.2">0</div>
+                    <div class="stat-label">°C 全球升温</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">🏭</div>
+                    <div class="stat-number" data-target="37">0</div>
+                    <div class="stat-label">Gt 年度碳排放</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">♻️</div>
+                    <div class="stat-number" data-target="95">0</div>
+                    <div class="stat-label">% 减排目标</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 核心信息区 -->
+        <section class="info-section">
+            <div class="container">
+                <h2 class="section-title">为什么碳排放如此关键？</h2>
+                <div class="info-grid">
+                    <div class="info-card">
+                        <div class="info-icon">🌍</div>
+                        <h3>气候变化</h3>
+                        <p>过度的碳排放导致温室效应加剧，全球气温不断上升，极端天气事件频繁发生。</p>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">🏔️</div>
+                        <h3>冰川消融</h3>
+                        <p>全球变暖导致北极冰川和山地冰川加速消融，海平面上升威胁沿海地区。</p>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">🌊</div>
+                        <h3>生态失衡</h3>
+                        <p>海洋酸化、生物多样性丧失、生态系统破坏正在加速，物种灭绝率攀升。</p>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">💚</div>
+                        <h3>绿色未来</h3>
+                        <p>通过减少碳排放和采取低碳行动，我们可以共同创造更美好的可持续未来。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 行动号召 -->
+        <section class="cta-section">
+            <div class="cta-content">
+                <h2>现在就采取行动</h2>
+                <p>每一个小的改变都能带来大的影响。探索我们的低碳行动指南，发现你可以做什么。</p>
+                <a href="action.html" class="btn btn-large">查看行动计划</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2026 碳排放保护地球 | 为绿色未来而努力</p>
+            <div class="footer-links">
+                <a href="#about">关于我们</a>
+                <a href="#contact">联系我们</a>
+                <a href="#privacy">隐私政策</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 脚本 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="js/three-earth.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
